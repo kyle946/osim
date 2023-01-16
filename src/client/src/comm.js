@@ -173,56 +173,6 @@ function comObj() {
     }
 
 
-    //请求接口
-    this.request = function (action, text, bin = null, code = 1) {
-        return new Promise((r, j) => {
-            wevent.once(action, (buf) => {
-                r(buf);
-            });
-            ipcRenderer.send("req", { action, text, bin, code });
-        })
-    }
-
-
-    this.reqlocal = function (action, json = null) {
-        return new Promise((r, j) => {
-            ipcRenderer.once("reqlocal", (e, buf) => {
-                if (buf.action == action) {
-                    r(buf);
-                }
-            });
-            ipcRenderer.send("reqlocal", { action, json });
-        })
-    }
-
-
-    this.connServer = function () {
-        return new Promise((r, j) => {
-            ipcRenderer.once('sessionid', (e, obj) => {
-                global.sess = obj;
-                r(obj);
-            });
-            ipcRenderer.send("conn", "1");  //开始连接服务器
-        })
-    }
-
-
-    /**
-     * 获取sessionid和用户信息
-     * @param {*} type      1 从服务器获取;  2 直接从main进程获取,不从服务器取
-     * @returns 
-     */
-    this.getsess = function (type = 1) {
-        return new Promise((r, j) => {
-            ipcRenderer.once('sessionid', (e, obj) => {
-                global.sess = obj;
-                r(obj);
-            });
-            ipcRenderer.send("sessionid", type);
-        })
-    }
-
-
     this.getSeq = function () {
         var str = global.user.id + (new Date()).getTime()
         return md5(str).toUpperCase();
@@ -232,26 +182,6 @@ function comObj() {
         return WebUrl.substr(WebUrl.length - 1, 1) == '/' ? WebUrl.substr(0, WebUrl.length - 1) : WebUrl;    //图片地址的域名
     }
 
-
-    /**
-     * 函数防抖
-     * @param {*} func 
-     * @param {*} wait 
-     * @param {*} timer 
-     * @param {*} _this 
-     * @returns 
-     */
-    this.debounce = (func, wait, obj = {}) => {
-        return (...args) => {
-            if (obj.timer) {
-                clearTimeout(timer);
-                obj.timer = null;
-            }
-            obj.timer = setTimeout(function () {
-                func.apply(obj.xthis, args)
-            }, wait);
-        }
-    }
 
 
     /**
