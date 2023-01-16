@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50737
 File Encoding         : 65001
 
-Date: 2023-01-16 15:48:16
+Date: 2023-01-17 04:52:34
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -130,7 +130,7 @@ CREATE TABLE `users` (
 -- Records of users
 -- ----------------------------
 INSERT INTO `users` VALUES ('1', 'kyle946@163.com', '96e79218965eb72c92a549dd5a330112', 'OSIM作者', 'avatar/1_avatar.png', 'I am the author of OSIM software.', '2023-01-11 15:21:19', '1', '1672945906', '0', '0', '0');
-INSERT INTO `users` VALUES ('2', '316686606@qq.com', '96e79218965eb72c92a549dd5a330112', '青竹丹枫', '', '', '2023-01-11 15:21:19', '0', '0', '0', '0', '0');
+INSERT INTO `users` VALUES ('2', 'test102@osim.osim', '96e79218965eb72c92a549dd5a330112', '开发102', '', '', '2023-01-11 15:21:19', '0', '0', '0', '0', '0');
 INSERT INTO `users` VALUES ('3', 'test100@osim.osim', '96e79218965eb72c92a549dd5a330112', '开发100', 'avatar/3_avatar.png', '这是一个开发账号.', '2023-01-11 15:21:19', '1', '1672737642', '0', '0', '0');
 INSERT INTO `users` VALUES ('4', 'test101@osim.osim', '96e79218965eb72c92a549dd5a330112', '开发101', 'avatar/4_avatar.png', '第二个开发账号', '2023-01-11 15:21:19', '1', '1672911257', '0', '0', '0');
-INSERT INTO `users` VALUES ('5', 'kyle1687@outlook.com', '96e79218965eb72c92a549dd5a330112', '我的OSIM', '', '', '2023-01-11 15:36:49', '0', '0', '0', '0', '0');
+INSERT INTO `users` VALUES ('5', 'test103@osim.osim', '96e79218965eb72c92a549dd5a330112', '开发103', '', '', '2023-01-11 15:36:49', '0', '0', '0', '0', '0');
