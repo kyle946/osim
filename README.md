@@ -1,9 +1,9 @@
 
-## OSIM使用文档，开发手册
+## OSIM聊天软件
 
 <br />
 
-开发文档地址：https://app.yixinu.com/osim/manual/
+开发文档、使用手册地址：https://app.yixinu.com/osim/manual/
 
 <br />
 
