@@ -3,7 +3,7 @@
 
 <br />
 
-开发文档地址：https://app.yixinu.com/osim/manual
+开发文档地址：https://app.yixinu.com/osim/manual/
 
 <br />
 
