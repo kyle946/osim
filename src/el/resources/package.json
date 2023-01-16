@@ -1,0 +1,11 @@
+{
+  "name": "osim",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "author": "kyle946@163.com",
+  "license": "ISC",
+  "dependencies": {
+    "ffi-napi": "^4.0.3"
+  }
+}

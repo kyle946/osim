@@ -1,0 +1,43 @@
+@import "./common.less";
+
+._l{
+    display: flex;
+    height: calc(100% - 50px);
+    z-index: 9;
+    position: relative;
+    user-select: none;
+    width: 100%;
+    padding-top: 50px;
+    .login{
+        display: flex;
+        width: 100%;
+        -webkit-app-region: drag;
+        .btn1{
+            border: 0;
+            background-color: #333;
+            color: #fff;
+            cursor: pointer;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            width: 100%;
+            margin-top: 40px;
+            border-radius: 8px;
+            &:hover {
+                background-color: #999;
+            }
+        }
+        .info2{
+            margin-top: 50px;
+            color: #999;
+            width: 100%;
+            text-align: center;
+            a{
+                color: rgb(0, 99, 192);
+                cursor: pointer;
+                &:hover {
+                    color: rgb(49, 155, 255);
+                }
+            }
+        }
+    }
+}

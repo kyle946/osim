@@ -1,0 +1,902 @@
+.HomeIndex {
+    display: flex;
+    user-select: none;
+    width: 100%;
+
+    .column1 {
+        width: 140px;
+        border-right: 1px solid #f1f1f1;
+    }
+
+    .column2 {
+        width: 250px;
+        border-right: 1px solid #f1f1f1;
+    }
+
+    .column3 {
+        border-right: 1px solid #f1f1f1;
+        width: calc(100% - 590px);
+    }
+
+    .column4 {
+        width: 200px;
+    }
+}
+
+.Menu1 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+
+    .title {
+        font-size: 22px;
+        color: #999;
+        margin-bottom: 20px;
+        padding-left: 10px;
+    }
+
+    .iconfont {
+        font-size: 18px;
+        color: #777;
+    }
+
+    a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        cursor: pointer;
+        position: relative;
+        padding-left: 10px;
+
+        .num {
+            background-color: rgb(255, 96, 96);
+            color: #fff;
+            border-radius: 50%;
+            font-size: 10px;
+            padding: 2px;
+            text-align: center;
+            width: 14px;
+            height: 14px;
+            position: absolute;
+            right: 10px;
+            top: 12px;
+        }
+
+        span {
+            color: #777;
+            font-size: 12px;
+            margin-left: 5px;
+        }
+
+        &:hover {
+            background-color: #f7f7f7;
+        }
+    }
+
+    .active {
+        span {
+            color: #0e82ed;
+        }
+
+        .iconfont {
+            color: #0e82ed;
+        }
+    }
+
+    .line1{
+        border-bottom: 1px solid #f1f1f1;
+    }
+}
+
+.List1 {
+    .search {
+        margin: 10px;
+        background-color: #f1f1f1;
+        padding: 10px;
+        display: flex;
+        border-radius: 5px;
+
+        .iconfont {
+            font-size: 22px;
+            color: #aaa;
+        }
+
+        input {
+            font-size: 16px;
+            border: 0;
+            display: block;
+            width: calc(100% - 26px);
+            outline: none;
+            background-color: #f1f1f1;
+            margin-left: 10px;
+            color: #666;
+        }
+        input::placeholder{
+            color: #aaa;
+        }
+    }
+
+    .list {
+        padding-top: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .topmenu{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        a{
+            cursor: pointer;
+            .iconfont{
+                font-size: 20px;
+                color: #888;
+            }
+            &:hover{
+                .iconfont{
+                    color: #ccc;
+                }
+            }
+        }
+        .text{
+            color: #888;
+            padding-top: 2px;
+        }
+    }
+}
+
+.List1Item {
+    display: flex;
+    cursor: pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    position: relative;
+
+    .bg {
+        background-color: #f8f8f8;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0px;
+        top: 0px;
+        z-index: 1;
+        border-left: 2px solid #0e82ed;
+    }
+
+    .num {
+        position: absolute;
+        right: 0px;
+        top: 25px;
+        font-size: 10px;
+        background-color: #ff6060;
+        width: 18px;
+        height: 18px;
+        color: #fff;
+        border-radius: 50%;
+        line-height: 18px;
+        text-align: center;
+    }
+
+    .left {
+        position: relative;
+        padding-top: 5px;
+        padding-right: 5px;
+        z-index: 2;
+
+        img {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+        }
+    }
+
+    .right {
+        position: relative;
+        width: calc(100% - 40px);
+        padding-top: 5px;
+        padding-left: 4px;
+        z-index: 2;
+
+        .nickname {
+            font-family: 'zcoolw02';
+            font-size: 14px;
+            height: 18px;
+            width: 150px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .info {
+            padding-top: 5px;
+            font-size: 12px;
+            color: #888;
+            height: 18px;
+            width: 160px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .time {
+            position: absolute;
+            right: 0;
+            top: 5px;
+            font-size: 12px;
+            color: #999;
+        }
+    }
+
+    &:hover {
+        background-color: #f5f5f5;
+    }
+}
+
+.Chat1 {
+    position: relative;
+    height: 100%;
+    .tabar1{
+        padding-top: 10px;
+        padding-left: 10px;
+        height: 40px;
+        border-bottom: 1px solid #f1f1f1;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        -webkit-app-region: drag;
+        .left{
+            display: flex;
+            flex-direction: row;
+        }
+        .avatar{
+            img{
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+            }
+        }
+        .nickname{
+            font-size: 20px;
+            padding-top: 2px;
+            margin-left: 10px;
+        }
+        .info{
+            margin-top: 6px;
+            margin-left: 10px;
+        }
+        .button{
+            display: flex;
+            width: 200px;
+            justify-content: flex-end;
+            padding-right: 5px;
+            padding-top: 5px;
+            a{
+                -webkit-app-region: no-drag;
+                display: block;
+                cursor: pointer;
+                width: 30px;
+                height: 28px;
+                margin-right: 5px;
+                margin-left: 5px;
+                .iconfont{
+                    font-size: 22px;
+                    padding: 2px;
+                    color: #888;
+                }
+                &:hover{
+                    .iconfont{
+                        color: #ccc;
+                    }
+                }
+            }
+        }
+    }
+    .chatContent{
+        overflow-y: scroll;
+        height: calc(100% - 150px);
+        padding: 10px;
+    }
+}
+
+.Chat1Text{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    .left{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .avatar{
+            img{
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+            }
+            padding-right: 10px;
+        }
+        .content{
+            background-color: #95e6fa;
+            color: #000;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 12px;
+            user-select:text;
+            border-top-left-radius: 0px;
+            max-width: 70%;
+            font-family: 'zcoolw03';
+        }
+        .time{
+            color: #aaa;
+            font-size: 12px;
+            margin-left: 10px;
+        }
+    }
+    .right{
+        display: flex;
+        flex-direction: row;
+        justify-content:flex-end;
+        align-items: center;
+        .avatar{
+            img{
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+            }
+            padding-left: 10px;
+        }
+        .content{
+            background-color: #f1f1f1;
+            color: #000;
+            font-family: 'zcoolw03';
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 12px;
+            user-select:text;
+            border-top-right-radius: 0px;
+            max-width: 70%;
+        }
+        .time{
+            color: #aaa;
+            font-size: 12px;
+            margin-right: 10px;
+        }
+    }
+}
+.Chat1Img{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    .left{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .avatar{
+            img{
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+            }
+            padding-right: 10px;
+        }
+        .content{
+            max-width: 60%;
+            border-radius: 10px;
+            overflow: hidden;
+            border-top-left-radius: 0px;
+            img{
+                display: block;
+                width: 100%;
+            }
+        }
+        .time{
+            color: #aaa;
+            font-size: 12px;
+            margin-left: 10px;
+        }
+    }
+    .right{
+        display: flex;
+        flex-direction: row;
+        justify-content:flex-end;
+        align-items: center;
+        .avatar{
+            img{
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+            }
+            padding-left: 10px;
+        }
+        .content{
+            max-width: 60%;
+            border-radius: 10px;
+            overflow: hidden;
+            border-top-right-radius: 0px;
+            img{
+                display: block;
+                width: 100%;
+            }
+        }
+        .time{
+            color: #aaa;
+            font-size: 12px;
+            margin-right: 10px;
+        }
+    }
+}
+.Chat1Tips{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative;
+    display: flex;
+    .line{
+        border-bottom: 1px solid #f1f1f1;
+        width: 100%;
+        position: absolute;
+        top: 18px;
+        z-index: 1;
+    }
+    .text{
+        font-size: 12px;
+        z-index: 2;
+        color: #666;
+        padding: 10px;
+        text-align: center;
+        background-color: #f1f1f1;
+        border-radius: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.Chat1SendMsg{
+    position: relative;
+    border: 1px solid #f1f1f1;
+    margin: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 8px;
+    a{
+        padding-left: 4px;
+        padding-right: 4px;
+        cursor: pointer;
+        .iconfont{
+            font-size: 24px;
+            color: #999;
+        }
+        &:hover{
+            .iconfont{
+                opacity: .5;
+            }
+        }
+    }
+    .blue{
+        .iconfont{
+            color: #0e82ed;
+        }
+    }
+    input{
+        padding: 5px;
+        outline: none;
+        width: calc(100% - 110px);
+        border: 0;
+        font-family: 'zcoolw02';
+        color: #666;
+    }
+    input::placeholder{
+        color: #aaa;
+    }
+    .textarea_placeholder{
+        position: absolute;
+        top: 16px;
+        left: 78px;
+        color: #aaa;
+        font-size: 14px;
+        z-index: 1;
+    }
+    .textarea{
+        z-index: 2;
+        padding: 5px;
+        outline: none;
+        width: calc(100% - 110px);
+        border: 0;
+        font-family: 'zcoolw02';
+        resize: none;
+        height: 28px;
+        color: #666;
+        overflow: hidden;
+        font-size: 14px;
+        img{
+            width: 50px;
+            height: 40px;
+        }
+    }
+}
+
+.Chat1UserInfo1{
+    padding-top: 50px;
+    height: calc(100% - 50px);
+    padding-left: 10px;
+    padding-right: 10px;
+    .title{
+        font-size: 22px;
+        font-family: 'zcoolw03';
+        margin-bottom: 30px;
+        color: #666;
+    }
+    .avatar{
+        display: flex;
+        justify-content: center;
+        img{
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+        }
+    }
+    .nickname{
+        margin-top: 15px;
+        margin-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
+        font-size: 16px;
+    }
+    .info{
+        text-align: center;
+        color: #777;
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+    .button{
+        button{
+            border: 1px solid #777;
+            color: #777;
+            background-color: #fff;
+            width: 80%;
+            margin-left: 10%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-top: 8px;
+            margin-bottom: 8px;
+            border-radius: 10px;
+            font-size: 14px;
+            cursor: pointer;
+            &:hover{
+                border: 1px solid #4ba8ff;
+                color: #4ba8ff;
+            }
+        }
+    }
+}
+
+
+.Chat1GroupInfo1{
+    padding-top: 50px;
+    height: calc(100% - 50px);
+    .title{
+        font-size: 22px;
+        font-family: 'zcoolw03';
+        margin-bottom: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: #666;
+    }
+    .avatar{
+        display: flex;
+        justify-content: center;
+        img{
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+        }
+    }
+    .nickname{
+        margin-top: 15px;
+        margin-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
+        font-size: 16px;
+    }
+    .title2{
+        margin-top: 40px;
+        font-size: 14px;
+        color: #333;
+        border-bottom: 1px solid #f1f1f1;
+        font-weight: bold;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .member_list{
+        height: calc(100% - 360px);
+        overflow-y: scroll;
+        .active{
+            background-color: #f1f1f1;
+        }
+        .member_item{
+            display: flex;
+            padding: 5px;
+            cursor: pointer;
+            img{
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+            }
+            .nickname2{
+                font-size: 12px;
+                width: calc(100% - 30px);
+                padding-left: 5px;
+                line-height: 30px;
+                height: 24px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
+    }
+    .info{
+        text-align: center;
+        color: #777;
+        font-size: 12px;
+        margin-bottom: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .iconarea{
+        margin-top: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        a{
+            display: block;
+            width: 30px;
+            height: 30px;
+            background-color: #f1f1f1;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            .iconfont{
+                font-size: 20px;
+                color: #777;
+            }
+            &:hover{
+                background-color: #ccc;
+                color: #333;
+            }
+        }
+    }
+}
+
+
+.AddContact1{
+    height: calc(100% - 40px);
+    padding: 20px;
+    .left{
+        img{
+            width: 40px;
+            height: 40px;
+        }
+    }
+    .right{
+        padding-top: 5px;
+        .info{
+            width: 88%;
+            height: 18px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+    input{
+        border: 0;
+        border-bottom: 1px solid #f1f1f1;
+        padding: 10px;
+        outline: none;
+        width: calc(100% - 20px);
+        margin-bottom: 15px;
+    }
+    textarea{
+        border: 1px solid #f1f1f1;
+        margin-top: 20px;
+        resize: none;
+        outline: none;
+        border-radius: 10px;
+        width: calc(100% - 20px);
+        height: 80px;
+        padding: 10px;
+        font-family: 'zcoolw02';
+    }
+    button{
+        border: 1px solid #777;
+        color: #777;
+        background-color: #fff;
+        width: 50%;
+        margin-left: 25%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+        &:hover{
+            border: 1px solid #4ba8ff;
+            color: #4ba8ff;
+        }
+    }
+    .tips{
+        margin-top: 50px;
+        color: #999;
+        text-align: center;
+    }
+
+}
+
+
+.AddGroup1 {
+    padding: 20px;
+    .title {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    .line1 {
+        display: flex;
+        margin-bottom: 20px;
+        font-size: 14px;
+
+        .label {
+            width: 150px;
+            line-height: 40px;
+        }
+
+        input {
+            font-size: 16px;
+            border: 1px solid #ccc;
+            display: block;
+            width: 100%;
+            outline: none;
+            color: #666;
+            padding: 10px;
+            border-radius: 10px;
+            font-family: 'zcoolw02';
+        }
+
+        input::placeholder {
+            color: #aaa;
+        }
+
+        .value {
+            min-height: 40px;
+            width: calc(100% - 170px);
+            button{
+                border: 1px solid #777;
+                color: #777;
+                background-color: #fff;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                border-radius: 10px;
+                cursor: pointer;
+                width: 202px;
+                font-family: 'zcoolw02';
+                &:hover{
+                    border: 1px solid #4ba8ff;
+                    color: #4ba8ff;
+                }
+            }
+            .avatareditor {
+                display: flex;
+                flex-direction: row;
+
+                .right {
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 20px;
+                    padding-top: 30px;
+
+                    .line2 {
+                        display: flex;
+                        flex-direction: row;
+                        margin-bottom: 20px;
+                        .label {
+                            width: 100px;
+                            padding-right: 20px;
+                            font-size: 14px;
+                            color: #888;
+                        }
+                        input {
+                            width: 180px;
+                            margin-left: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.SelectUser1{
+    padding: 15px;
+    height: calc(100% - 30px);
+    .search {
+        margin: 10px;
+        background-color: #f1f1f1;
+        padding: 7px;
+        display: flex;
+        border-radius: 5px;
+        .iconfont {
+            font-size: 18px;
+            color: #aaa;
+        }
+        input {
+            font-size: 14px;
+            border: 0;
+            display: block;
+            width: calc(100% - 26px);
+            outline: none;
+            background-color: #f1f1f1;
+            margin-left: 10px;
+            color: #666;
+        }
+        input::placeholder{
+            color: #aaa;
+        }
+    }
+    ._list{
+        padding: 10px;
+        height: calc(100% - 110px);
+        overflow-y: scroll;
+        .active{
+            background-color: #b4f0ff;
+            border-radius: 5px;
+        }
+        ._item{
+            margin-bottom: 5px;
+            display: flex;
+            padding: 5px;
+            cursor: pointer;
+            img{
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+            }
+            ._nickname{
+                font-size: 12px;
+                width: calc(100% - 30px);
+                padding-left: 5px;
+                line-height: 30px;
+                height: 24px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
+    }
+    .button{
+        position: relative;
+        button{
+            border: 1px solid #777;
+            color: #777;
+            background-color: #fff;
+            width: 140px;
+            padding: 8px;
+            border-radius: 10px;
+            font-size: 14px;
+            cursor: pointer;
+            margin: auto;
+            display: block;
+            &:hover{
+                border: 1px solid #4ba8ff;
+                color: #4ba8ff;
+            }
+        }
+    }
+}

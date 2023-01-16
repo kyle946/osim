@@ -1,0 +1,144 @@
+@import "./common.less";
+
+.sigup{
+    display: flex;
+    width: 100%;
+    padding-top: 50px;
+    height: calc(100% - 50px);
+    .left{
+        width: 50%;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .left1{
+            border-radius: 10px;
+            background-color: rgb(0 189 226);
+            height: 100%;
+            width: 100%;
+        }
+    }
+    .right{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .form1{
+            flex-direction: column;
+            width: 70%;
+        }
+        .title1{
+            font-size: 32px;
+            font-weight: bold;
+        }
+        .info1{
+            text-indent: 2px;
+            color: #777;
+            margin-top: 6px;
+            margin-bottom: 25px;
+        }
+        .tips{
+            color: #f00;
+            font-size: 12px;
+        }
+        .row1{
+            margin-top: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            position: relative;
+        }
+        .input1{
+            border:  0px;
+            border-bottom:  1px solid #efefef;
+            padding:  8px;
+            width:  100%;
+            margin-top:  10px;
+            margin-bottom:  10px;
+            outline:  none;
+        }
+    }
+    .close1{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        .iconfont{
+            font-size: 30px;
+            color: #ccc;
+            cursor: pointer;
+            &:hover {
+                color: #f1f1f1;
+            }
+        }
+    }
+    .logoarea{
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        display: flex;
+        flex-direction: row;
+        img{
+            display: block;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+        span{
+            font-size: 24px;
+            color: #777;
+            font-weight: bold;
+            padding-left: 5px;
+        }
+    }
+    .btn1{
+        border: 0;
+        background-color: #0e82ed;
+        color: #fff;
+        cursor: pointer;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        width: 100%;
+        margin-top: 40px;
+        border-radius: 8px;
+        &:hover {
+            background-color: #999;
+        }
+    }
+    .btn2{
+        position: absolute;
+        bottom: 90px;
+        right: 0px;
+        border: 1px solid #999;
+        background-color: #fff;
+        color: #666;
+        cursor: pointer;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 100px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-radius: 8px;
+        outline: none;
+        &:hover {
+            color: #fff;
+            border: 1px solid #0e82ed;
+            background-color: #0e82ed;
+        }
+    }
+    .info2{
+        margin-top: 50px;
+        color: #999;
+        width: 100%;
+        text-align: center;
+        a{
+            color: rgb(0, 99, 192);
+            cursor: pointer;
+            &:hover {
+                color: rgb(49, 155, 255);
+            }
+        }
+    }
+}

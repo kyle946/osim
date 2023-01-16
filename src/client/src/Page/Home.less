@@ -1,0 +1,81 @@
+
+
+@width1: 70px;
+.mainIndex{
+    display: flex;
+    height: calc(100% - 2px);
+    .leftMenu{
+        height: 100%;
+        width: @width1;
+        background-color: #f9f9fb;
+        position: relative;
+        -webkit-app-region: drag;
+        .logo1{
+            -webkit-app-region: drag;
+            margin-top: 20px;
+            cursor: move;
+            img{
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+            }
+            .offline{
+                filter: grayscale(1);
+            }
+        }
+        a{
+            -webkit-app-region: no-drag;
+            width: @width1;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            color: #999;
+            font-size: 14px;
+            cursor: pointer;
+            z-index: 9;
+            &:hover{
+                color: #ccc;
+            }
+            .iconfont{
+                font-size: 22px;
+            }
+        }
+        .item{
+            .iconfont{
+                font-size: 22px;
+                color: #0e82ed;
+            }
+        }
+        .btn_exit{
+            position: absolute;
+            bottom: 0px;
+            cursor: pointer;
+            color: #00a767;
+        }
+        .btn_exit_offline{
+            position: absolute;
+            bottom: 0px;
+            cursor: pointer;
+        }
+        .bg{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+    }
+    .mainIndexRight{
+        display: flex;
+        width: calc(100% - 70px);
+        overflow-y: hidden;
+
+        .mount_object{
+            display: flex;
+            width: 0px;
+        }
+    }
+}
