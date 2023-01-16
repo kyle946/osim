@@ -6,7 +6,15 @@
 开发文档、使用手册地址：https://app.yixinu.com/osim/manual/
 
 <br />
+### 联系作者
 
+Email：kyle946@163.com
+
+微信：xianglou
+
+来信请说明咨询OSIM。
+
+<br />
 ### OSIM是什么？
 
 OSIM是一款 **免费开源** 的即时通讯系统 ；
@@ -67,6 +75,33 @@ OSIM是一款 **免费开源** 的即时通讯系统 ；
 
 
 <br />
+#### 源码目录说明
+
+
+
+osim-win32-x64.7z   //演示程序 ，不用部署，可直接聊天
+
+release	//发行版，用来部署在自己发服务器
+
+​	---- client.7z		 //客户端 
+
+src	//源代码
+
+​	---- client		//electron客户端，渲染进程代码
+
+​	---- el		//electron客户端，主进程代码
+
+​	---- server		//服务端代码
+
+​	---- udpsock		//一个打印日志的调试工具，C++ 语言开发
+
+​	---- app		//移动端，未开发
+
+​	---- libosim		//osim动态库，C++ 语言开发，不开源
+
+​	---- launch2		//启动程序，C++ 语言开发，不开源
+
+​	---- nodeAddons		//nodejs 的 NAPI 库，C++ 语言开发，不开源
 <br />
 
 ### 联系作者
