@@ -3,6 +3,10 @@
 
 <br />
 
+开发文档地址：https://app.yixinu.com/osim/manual
+
+<br />
+
 ### OSIM是什么？
 
 OSIM是一款 **免费开源** 的即时通讯系统 ；
